@@ -8,11 +8,6 @@ use App\Models\User;
 
 class TestController extends Controller
 {
-    public function skip()
-    {
-        $user = User::skip(4)->take(2)->get();
-        print_r($user);
-    }
 
     public function bulk()
     {
